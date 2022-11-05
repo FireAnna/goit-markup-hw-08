@@ -1,0 +1,55 @@
+
+
+.social{
+  &-list {
+    display: flex;
+    justify-content: center;
+    color: var(--team-social-icon);
+    margin-top: 16px;
+  }
+    &-link:hover,
+    &-link:focus {
+      background-color: var(--accent-color);
+      color: var(--title-color);
+    }
+  &-item {
+    width: 44px;
+    height: 44px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+  }
+  &-link {
+    fill: currentColor;
+    color: inherit;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    color: inherit;
+    transition: background-color 250ms var(--cubic);
+  }
+  &-icon {
+    width: 20px;
+    height: 20px;
+    transition: fill var(--team-social-icon)
+  }
+}
+
+.footer {
+  .social-link {
+    transition: background-color 250ms var(--cubic), fill 250ms var(--cubic), color 250ms var(--cubic);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--title-color);
+    }
+  }
+}
+

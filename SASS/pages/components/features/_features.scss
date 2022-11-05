@@ -1,0 +1,27 @@
+.features{
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    line-height: 1.7;
+  }
+}
+
+.section-features{
+ padding-top: 94px;
+padding-bottom: 94px;
+  
+}
+
+
+.features__list>li {
+  width: calc((100% - 90px) / 4);
+}
+.features__list>li:not(:last-child) {
+  margin-right: 30px;
+}
+.features__list {
+  display: flex;
+  text-align: left;
+}

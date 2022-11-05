@@ -1,0 +1,30 @@
+.menu {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  &__nav {
+    color: var(--primary-text-color);
+  }
+  &__contact {
+    color: var(--nav-contact-color);
+    font-weight: 500;
+  }
+}
+.current {
+  color: var(--accent-color);
+}
+
+.menu{
+  &__nav{
+    &:hover,
+    &:focus{
+      color: var(--accent-color)
+    }
+  }
+  &__contact{
+    &:hover,
+    &:focus{
+      color: var(--accent-color)
+    }
+  }
+}

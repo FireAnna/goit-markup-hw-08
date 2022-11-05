@@ -1,0 +1,12 @@
+
+.footer {
+  & .logo {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    &-white {
+      color: var(--title-color);
+      margin-bottom: 9px;
+    }
+  }
+}
