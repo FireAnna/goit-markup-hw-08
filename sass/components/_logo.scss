@@ -1,0 +1,51 @@
+.logo {
+  font-family: "Raleway", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 93px;
+}
+.menu__logo {
+  font-family: "Raleway", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-color);
+  padding: 16px 0px;
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+        padding: 26px 0;
+      }
+}
+
+
+.menu__logo{
+  &-studio {
+    color: var(--title-text-color);
+  }
+}
+.logo  {
+  &-blue {
+    color: var(--accent-color);
+  }
+}
+
+.logo {
+  &-black {
+    color: var(--title-text-color);
+  }
+}
+
+.footer {
+  & .logo {
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 20px;
+
+    &-studio {
+    margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-studio{
+color: var(--title-color);
+}

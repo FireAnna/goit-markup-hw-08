@@ -1,2 +1,47 @@
-@import "./pages/page-studio";
-@import "./pages/page-portfolio";
+/*---------- UTILS ----------*/
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+/*---------- BASE ----------*/
+@import "./base/common";
+
+
+/*---------- COMPONENTS ----------*/
+@import "./components/backdrop";
+@import "./components/close-button";
+@import "./components/container";
+@import "./components/footer-title";
+@import "./components/hero-button";
+@import "./components/hero-title";
+@import "./components/hero-section";
+@import "./components/title";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/team-title";
+
+/*LAYOUT*/
+@import "./layout/customers-item";
+@import "./layout/customers-section";
+@import "./layout/features";
+@import "./layout/features-icon";
+@import "./layout/footer-contacts";
+@import "./layout/footer-section";
+@import "./layout/footer-social";
+@import "./layout/footer-subscribe";
+@import "./layout/nav-item";
+@import "./layout/nav";
+
+@import "./layout/section-works";
+@import "./layout/team-section";
+@import "./layout/team-cards";
+@import "./layout/team-social";
+
+
+
+
+
+
+@import "./layout/portfolio-buttons";
+@import "./layout/portfolio-cards";
+@import "./layout/portfolio-overlay";
+@import "./layout/portfolio-overlay";
