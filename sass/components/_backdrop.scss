@@ -5,13 +5,18 @@
   overflow-y: scroll;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 99;
+  
+ 
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  opacity: 1;
+
   &.is-hidden {
-    opacity: 1;
+    opacity:0;
         pointer-events: none;
   
   }

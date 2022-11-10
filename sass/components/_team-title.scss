@@ -3,12 +3,17 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--primary-text-color);
-    margin-top: 0;
-    margin-bottom: 10px;    
+
+    margin-bottom: 10px; 
+    text-align: center;   
   }
-  &-profession {
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0px;
-  }
+
+}
+.professions {
+  color: var(--nav-contact-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  margin-bottom: 16px;
 }
