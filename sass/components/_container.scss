@@ -1,3 +1,4 @@
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -14,7 +15,7 @@
     width: 1200px;
   }
 
-  .page-footer & {
+  .footer & {
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -30,19 +31,4 @@
       text-align: center;
     }
   }
-    .footer & {
-       @media screen and (min-width: 768px) {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-around;
-         align-items: baseline;
-       }
-    
-       @media screen and (min-width: 1200px) {
-         justify-content: space-between;
-       }
-    
-       @media screen and (max-width: 1199px) {
-         text-align: center;
-       }
-}}
+}
