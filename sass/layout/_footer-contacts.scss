@@ -9,8 +9,6 @@
     transition: color 250ms var(--cubic);
   }
   &-list {
-    display: inline-block;
-    margin-bottom: 9px;
     transition: color 250ms var(--cubic);
     &:hover .footer-address,
     &:focus .footer-address {
@@ -27,3 +25,8 @@
     }      
   }
 }
+.address-item{
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }

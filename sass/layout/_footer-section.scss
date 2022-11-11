@@ -3,12 +3,13 @@
   padding-bottom: 60px;
   background-color: var(--background-accent-color);
   &-wrapper {
-    margin-right: 70px;
-    text-align: left;
-  }
-  &-container {
-    display: flex;
-    align-items: baseline;
-    position: relative;
-  }
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+      }
+    }
+  // &-container {
+  //   display: flex;
+  //   align-items: baseline;
+  //   position: relative;
+  // }
 }

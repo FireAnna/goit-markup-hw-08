@@ -2,17 +2,22 @@
   font-family: "Raleway", san-serif;
   font-weight: 700;
   font-size: 26px;
-  margin-right: 93px;
+  padding: 24px 0;
+  color: #2196f3;
+  letter-spacing: .03em;
+  font-size: 24px;
+  line-height: 1.16;
 }
 .menu__logo {
+  line-height: 1.16;
   font-family: "Raleway", san-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: var(--accent-color);
   padding: 16px 0px;
     @media screen and (min-width: 768px) {
-        margin-right: 88px;
-        padding: 26px 0;
+    margin-right: 88px;
+    padding: 26px 0;
       }
 }
 
@@ -35,16 +40,20 @@
 }
 
 .footer {
-  & .logo {
-    display: inline-block;
-    margin-right: 0px;
-    margin-bottom: 20px;
+  
+  
 
     &-studio {
     margin-bottom: 9px;
     }
-  }
+    &-logo {
+          margin-right: 0;
+          display: inline-block;
+          color: var(--accent-color);
+    }
 }
+
+
 
 .footer-studio{
 color: var(--title-color);
