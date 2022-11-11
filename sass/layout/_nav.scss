@@ -6,14 +6,20 @@
     color: var(--primary-text-color);
   }
   &__contact {
-    color: var(--nav-contact-color);
+    
+    color:var(--nav-contact-color);
     font-weight: 500;
   }
 }
 .current {
   color: var(--accent-color);
 }
-
+.menu__contact--accent {
+   @media screen and (max-width: 767px) {
+     color: var(--accent-color);
+    
+   }
+ }
 .menu{
   &__nav{
     &:hover,
@@ -28,3 +34,24 @@
     }
   }
 }
+
+.menu__list-item{
+    @media screen and (max-width: 767px) {
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+    }
+  }

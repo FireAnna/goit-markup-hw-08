@@ -852,10 +852,10 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .link-nav {
-    position: relative;
     font-size: 14px;
     line-height: 1.142;
-    padding: 32px 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -899,6 +899,20 @@ textarea {
   fill: currentColor;
   color: inherit;
   margin-right: 10px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu__icons {
+    margin-right: 10px;
+    fill: currentColor;
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu .contact__link--accent {
+    color: var(--accent-color);
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -932,7 +946,7 @@ textarea {
   padding: 10px 0;
   margin: 0;
   border: none;
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   background-color: transparent;
   margin-left: auto;
   position: relative;
@@ -953,7 +967,8 @@ textarea {
 }
 
 .menu-mobile__icon {
-  fill: currentColor;
+  fill: var(--accent-color);
+  padding: 2px;
 }
 
 .menu-mobile .menu-mobile__close {
@@ -995,6 +1010,40 @@ textarea {
     align-items: center;
   }
 }
+.social-list__menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (min-width: 768px) {
+  .social-list__menu {
+    display: none;
+  }
+}
+
+.social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.social-list__line {
+  background-color: rgba(33, 33, 33, 0.2);
+  width: 22px;
+  height: 2px;
+  transform: rotate(90deg);
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -1011,11 +1060,33 @@ textarea {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .menu__contact--accent {
+    color: var(--accent-color);
+  }
+}
+
 .menu__nav:hover, .menu__nav:focus {
   color: var(--accent-color);
 }
 .menu__contact:hover, .menu__contact:focus {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .menu__list-item:last-child {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu__list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .title-size {
