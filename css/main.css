@@ -54,10 +54,6 @@ address ul {
   padding: 0px;
 }
 
-header {
-  border-bottom: 1px solid var(--header-border);
-}
-
 img {
   display: block;
 }
@@ -852,10 +848,18 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .link-nav {
-    font-size: 14px;
-    line-height: 1.142;
+    font-size: 12px;
+    line-height: 1.167;
     display: flex;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-nav {
+    font-size: 14px;
+    line-height: 1.142;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -942,6 +946,11 @@ textarea {
     align-items: center;
   }
 }
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .menu-mobile {
   padding: 10px 0;
   margin: 0;
@@ -968,7 +977,6 @@ textarea {
 
 .menu-mobile__icon {
   fill: var(--accent-color);
-  padding: 2px;
 }
 
 .menu-mobile .menu-mobile__close {
@@ -988,7 +996,7 @@ textarea {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: fffff;
+    background-color: #fff;
     height: 100%;
     width: 100%;
     padding: 48px 40px;
@@ -1051,10 +1059,6 @@ textarea {
 .menu__nav {
   color: var(--primary-text-color);
 }
-.menu__contact {
-  color: var(--nav-contact-color);
-  font-weight: 500;
-}
 
 .current {
   color: var(--accent-color);
@@ -1067,9 +1071,6 @@ textarea {
 }
 
 .menu__nav:hover, .menu__nav:focus {
-  color: var(--accent-color);
-}
-.menu__contact:hover, .menu__contact:focus {
   color: var(--accent-color);
 }
 
