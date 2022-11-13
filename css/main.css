@@ -70,6 +70,12 @@ img {
   transition: color 250ms var(--cubic);
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-style: normal;
+}
+
 /*---------- COMPONENTS ----------*/
 .backdrop {
   position: fixed;
@@ -834,7 +840,7 @@ textarea {
 }
 
 .link-nav {
-  color: var(--primary-text-color);
+  color: var(--nav-contact-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.175;
@@ -976,7 +982,7 @@ textarea {
 }
 
 .menu-mobile__icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .menu-mobile .menu-mobile__close {

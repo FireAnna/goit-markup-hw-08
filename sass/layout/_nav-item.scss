@@ -50,7 +50,7 @@ margin-right: 50px;
   }
 
 .link-nav{
-    color: var(--primary-text-color);
+    color: var(--nav-contact-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.175;
@@ -214,7 +214,7 @@ margin-right: 50px;
 }
 
 .menu-mobile__icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 
 }
 
