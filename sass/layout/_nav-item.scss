@@ -50,7 +50,7 @@ margin-right: 50px;
   }
 
 .link-nav{
-    color: var(--nav-contact-color);
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.175;
@@ -72,54 +72,14 @@ margin-right: 50px;
         }
     
   }
-    .link-nav--current{
-      color: var(--accent-color);
-    }
 
-@media screen and (min-width: 768px) {
-  .link-nav--current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    transform: scaleX(1);
-    transition: transform var(--cubic);
-  }
-}
+  
 
-@media screen and (min-width: 768px) {
-  .link-nav--current {
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -1px;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: var(--accent-color);
-      opacity: 0;
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
-    }
-}}
+    
 
-.navigation__link--accent {
 
-  &:hover,
-  &:focus {
-    &::after {
-      transform: scale(1);
-      opacity: 1;
-    }
 
-  }
-}
 
 
 .link{
@@ -242,14 +202,22 @@ margin-right: 50px;
   
 
 // 
-.menu__contact--accent {
+.link-nav--current {
+  color: #2196f3;
+}
+ 
+
+.menu__contact--current {
   @media screen and (max-width: 767px) {
-      color: var(--accent-color);
-      font-size: 20px;
-}}
+    color: var(--accent-color);
+    font-size: 20px;
+  }
+}
+
+
 
 @media screen and (min-width: 768px) {
-  .menu__contact--accent::after {
+  .link-nav--current::after {
     content: "";
     display: block;
     position: absolute;
@@ -257,42 +225,13 @@ margin-right: 50px;
     left: 0;
     width: 100%;
     height: 4px;
+    background-color: #2196f3;
     border-radius: 2px;
     transform: scaleX(1);
-    transition: transform 250ms var(--cubic);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu__contact--accent {
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: -1px;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: var(--accent-color);
-      opacity: 1;
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-
-    }
-  }
-}
-
-.menu__contact--accent {
-
-  &:hover,
-  &:focus {
-    &::after {
-      transform: scale(1);
-      opacity: 1;
-    }
-
-  }
-}
 // 
 
 
