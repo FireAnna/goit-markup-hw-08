@@ -10,12 +10,9 @@
 .current {
   color: var(--accent-color);
 }
-.menu__contact--accent {
-   @media screen and (max-width: 767px) {
-     color: var(--accent-color);
-    
-   }
- }
+
+
+
 .menu{
   &__nav{
     &:hover,
@@ -46,3 +43,5 @@
 
     }
   }
+
+  

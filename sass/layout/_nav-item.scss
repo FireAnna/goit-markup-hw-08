@@ -65,21 +65,61 @@ margin-right: 50px;
     }
 
         @media screen and (min-width: 768px) {
-          font-size: 12px;
+          font-size: 14px;
           line-height: 1.167;
-          display: flex;
-          align-items: center;
+        position: relative;
+        padding: 32px 0;
         }
     
-        @media screen and (min-width: 1200px) {
-          font-size: 14px;
-          line-height: 1.142;
-          padding-top: 32px;
-          padding-bottom: 32px;
-        }
   }
+    .link-nav--current{
+      color: var(--accent-color);
+    }
 
+@media screen and (min-width: 768px) {
+  .link-nav--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(1);
+    transition: transform var(--cubic);
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .link-nav--current {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      opacity: 0;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+
+    }
+}}
+
+.navigation__link--accent {
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+  }
+}
 
 
 .link{
@@ -104,23 +144,12 @@ margin-right: 50px;
   }
 }
 
-.link-nav{
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -1px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-}
+// 
+
+
+
+
+
 .link-nav{
   &:hover,
   &:focus{
@@ -132,27 +161,22 @@ margin-right: 50px;
   }
 }
 
- 
+
+
 .menu{
   &__icons {
     fill: currentColor;
     color: inherit;
     margin-right: 10px;
-    display: none;
+    display: none; 
+
       @media screen and (min-width: 768px) {
           margin-right: 10px;
           fill: currentColor;
           display: block;
         }
-      }
-      
-      .contact__link--accent {
-        @media screen and (max-width: 767px) {
-          color: var(--accent-color);
-          font-size: 20px;
-        }
-  }
-}
+      } }
+
 @media screen and (max-width: 767px) {
   .menu__header-container {
     position: fixed;
@@ -187,6 +211,91 @@ margin-right: 50px;
     display: flex;
     align-items: center;
   }
+
+.menu__contact{
+  color: var(--nav-contact-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.176;
+    display: block;
+    letter-spacing: 0.02em;
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.167;
+      display: flex;
+      align-items: center;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.142;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  
+
+// 
+.menu__contact--accent {
+  @media screen and (max-width: 767px) {
+      color: var(--accent-color);
+      font-size: 20px;
+}}
+
+@media screen and (min-width: 768px) {
+  .menu__contact--accent::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(1);
+    transition: transform 250ms var(--cubic);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__contact--accent {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      opacity: 1;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+
+    }
+  }
+}
+
+.menu__contact--accent {
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+  }
+}
+// 
+
+
 .menu-mobile {
   padding: 10px 0;
   margin: 0;
